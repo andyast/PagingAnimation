@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OSo-Xd-wl8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Paging Animation-->
+        <scene sceneID="3GU-QQ-JyJ">
+            <objects>
+                <viewController id="PxF-Ax-wPy" customClass="RootViewController" customModule="PagingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="17i-ZA-3zy"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Yh-h8-jIR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cc6-cB-pgf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAf-ho-xct">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PxF-Ax-wPy" id="LuD-1m-Pdn"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="USk-R8-BvL">
+                                <rect key="frame" x="0.0" y="499" width="600" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.031372550870000002" green="0.73725491759999995" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <action selector="pageControl_ValueChanged:" destination="PxF-Ax-wPy" eventType="valueChanged" id="XBH-nI-1cX"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FAf-ho-xct" firstAttribute="top" secondItem="cc6-cB-pgf" secondAttribute="top" id="2W1-3W-pjl"/>
+                            <constraint firstItem="8Yh-h8-jIR" firstAttribute="top" secondItem="FAf-ho-xct" secondAttribute="bottom" id="D2B-OT-KZn"/>
+                            <constraint firstItem="8Yh-h8-jIR" firstAttribute="top" secondItem="USk-R8-BvL" secondAttribute="bottom" id="D8c-Ui-SM2"/>
+                            <constraint firstItem="FAf-ho-xct" firstAttribute="leading" secondItem="cc6-cB-pgf" secondAttribute="leading" id="NMr-0x-Nvr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="USk-R8-BvL" secondAttribute="trailing" constant="-16" id="NYr-4p-YxA"/>
+                            <constraint firstItem="USk-R8-BvL" firstAttribute="leading" secondItem="cc6-cB-pgf" secondAttribute="leadingMargin" constant="-16" id="UCe-ur-6E1"/>
+                            <constraint firstItem="8Yh-h8-jIR" firstAttribute="top" secondItem="USk-R8-BvL" secondAttribute="bottom" id="khR-y6-3av"/>
+                            <constraint firstItem="8Yh-h8-jIR" firstAttribute="top" secondItem="USk-R8-BvL" secondAttribute="bottom" id="pWG-Bl-qZd"/>
+                            <constraint firstAttribute="trailing" secondItem="FAf-ho-xct" secondAttribute="trailing" id="yhP-eq-fsY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Paging Animation" id="fYV-WV-NDS"/>
+                    <connections>
+                        <outlet property="pageControl" destination="USk-R8-BvL" id="DxY-hC-LKf"/>
+                        <outlet property="scrollView" destination="FAf-ho-xct" id="iXl-Jp-2DY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPC-vx-IW7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="816"/>
+        </scene>
+        <!--Page 1-->
+        <scene sceneID="AKD-IK-vjQ">
+            <objects>
+                <collectionViewController storyboardIdentifier="Page1" title="Page 1" id="I1Z-s5-W79" customClass="BasicCollectionViewController" customModule="PagingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Y9r-bZ-Lmd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="fwe-Ac-7cP">
+                            <size key="itemSize" width="104" height="140"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="I1Z-s5-W79" id="8jU-48-HqJ"/>
+                            <outlet property="delegate" destination="I1Z-s5-W79" id="i6e-TF-ban"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ua-1d-bQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="-139"/>
+        </scene>
+        <!--Page 2-->
+        <scene sceneID="IB6-Pz-N3n">
+            <objects>
+                <collectionViewController storyboardIdentifier="Page2" title="Page 2" id="vuI-d4-qMI" customClass="BasicCollectionViewController" customModule="PagingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="qgy-gK-sus">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="dsx-tQ-qzS">
+                            <size key="itemSize" width="104" height="140"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="vuI-d4-qMI" id="6KF-zI-IVE"/>
+                            <outlet property="delegate" destination="vuI-d4-qMI" id="AAG-ao-dFV"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpG-gb-wJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="607"/>
+        </scene>
+        <!--Page 3-->
+        <scene sceneID="z8v-BL-PE3">
+            <objects>
+                <collectionViewController storyboardIdentifier="Page3" title="Page 3" id="RZm-lo-n6I" customClass="BasicCollectionViewController" customModule="PagingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="aAw-ir-E72">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="qbR-jz-wVt">
+                            <size key="itemSize" width="104" height="140"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="RZm-lo-n6I" id="rjS-kb-G1w"/>
+                            <outlet property="delegate" destination="RZm-lo-n6I" id="Han-0d-TBt"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGy-nK-Unz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501" y="1323"/>
+        </scene>
+        <!--Page 4-->
+        <scene sceneID="xkk-6k-S0H">
+            <objects>
+                <collectionViewController storyboardIdentifier="Page4" title="Page 4" id="LOp-RA-xIY" customClass="BasicCollectionViewController" customModule="PagingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Isu-CM-0ML">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="bI5-iD-yZ5">
+                            <size key="itemSize" width="104" height="140"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="LOp-RA-xIY" id="tBs-bm-tht"/>
+                            <outlet property="delegate" destination="LOp-RA-xIY" id="Mj0-8E-ijh"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsx-Xz-QJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501" y="2023"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SKP-aO-XLU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OSo-Xd-wl8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Yin-hG-a17">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PxF-Ax-wPy" kind="relationship" relationship="rootViewController" id="ffH-lx-vjx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5w-ca-nsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="816"/>
+        </scene>
+        <!--Page 5-->
+        <scene sceneID="Af6-VE-G0Q">
+            <objects>
+                <collectionViewController storyboardIdentifier="Page5" title="Page 5" id="Eog-20-sdZ" customClass="BasicCollectionViewController" customModule="PagingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FrL-Vw-gp0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="uks-na-OSe">
+                            <size key="itemSize" width="104" height="140"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Eog-20-sdZ" id="4J3-3h-yAN"/>
+                            <outlet property="delegate" destination="Eog-20-sdZ" id="9Zr-Jl-U5K"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tT0-iu-rzC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="2734"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+</document>

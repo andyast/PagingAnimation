@@ -3,8 +3,6 @@
 //  PagingAnimations
 //
 //  Created by Andy Steinmann on 11/21/14.
-//  Copyright (c) 2014 DLS. All rights reserved.
-//
 
 import UIKit
 
@@ -16,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		application.statusBarStyle = UIStatusBarStyle.LightContent
 		return true
 	}
 

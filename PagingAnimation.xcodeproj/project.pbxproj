@@ -7,39 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2F40651A1FDCC800CAEC96 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F40641A1FDCC800CAEC96 /* BasicCollectionViewController.swift */; };
+		3D2F40681A1FDD4200CAEC96 /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F40661A1FDD4200CAEC96 /* BasicCollectionViewCell.swift */; };
+		3D2F40691A1FDD4200CAEC96 /* BasicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2F40671A1FDD4200CAEC96 /* BasicCollectionViewCell.xib */; };
+		3D2F406B1A1FDD9200CAEC96 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2F406A1A1FDD9200CAEC96 /* QuartzCore.framework */; };
 		3D358F5F1A1FC0FF002E27DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D358F5E1A1FC0FF002E27DB /* AppDelegate.swift */; };
 		3D358F611A1FC0FF002E27DB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D358F601A1FC0FF002E27DB /* RootViewController.swift */; };
-		3D358F631A1FC0FF002E27DB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D358F621A1FC0FF002E27DB /* DataViewController.swift */; };
-		3D358F651A1FC0FF002E27DB /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D358F641A1FC0FF002E27DB /* ModelController.swift */; };
+		3D358F651A1FC0FF002E27DB /* PagingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D358F641A1FC0FF002E27DB /* PagingController.swift */; };
 		3D358F681A1FC0FF002E27DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D358F661A1FC0FF002E27DB /* Main.storyboard */; };
 		3D358F6A1A1FC0FF002E27DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D358F691A1FC0FF002E27DB /* Images.xcassets */; };
 		3D358F6D1A1FC0FF002E27DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D358F6B1A1FC0FF002E27DB /* LaunchScreen.xib */; };
-		3D358F791A1FC0FF002E27DB /* PagingAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D358F781A1FC0FF002E27DB /* PagingAnimationsTests.swift */; };
+		3D40F9E71A237796008B13CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D40F9E61A237796008B13CD /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3D358F731A1FC0FF002E27DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D358F511A1FC0FF002E27DB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D358F581A1FC0FF002E27DB;
-			remoteInfo = PagingAnimations;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		3D358F591A1FC0FF002E27DB /* PagingAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2F40641A1FDCC800CAEC96 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
+		3D2F40661A1FDD4200CAEC96 /* BasicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D2F40671A1FDD4200CAEC96 /* BasicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCollectionViewCell.xib; sourceTree = "<group>"; };
+		3D2F406A1A1FDD9200CAEC96 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3D358F591A1FC0FF002E27DB /* PagingAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D358F5D1A1FC0FF002E27DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D358F5E1A1FC0FF002E27DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D358F601A1FC0FF002E27DB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		3D358F621A1FC0FF002E27DB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		3D358F641A1FC0FF002E27DB /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		3D358F641A1FC0FF002E27DB /* PagingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingController.swift; sourceTree = "<group>"; };
 		3D358F671A1FC0FF002E27DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D358F691A1FC0FF002E27DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3D358F6C1A1FC0FF002E27DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3D358F721A1FC0FF002E27DB /* PagingAnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagingAnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D358F771A1FC0FF002E27DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D358F781A1FC0FF002E27DB /* PagingAnimationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingAnimationsTests.swift; sourceTree = "<group>"; };
+		3D40F9E61A237796008B13CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D358F6F1A1FC0FF002E27DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3D2F406B1A1FDD9200CAEC96 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +51,9 @@
 		3D358F501A1FC0FF002E27DB = {
 			isa = PBXGroup;
 			children = (
-				3D358F5B1A1FC0FF002E27DB /* PagingAnimations */,
-				3D358F751A1FC0FF002E27DB /* PagingAnimationsTests */,
+				3D40F9E61A237796008B13CD /* Default-568h@2x.png */,
+				3D2F406A1A1FDD9200CAEC96 /* QuartzCore.framework */,
+				3D358F5B1A1FC0FF002E27DB /* PagingAnimation */,
 				3D358F5A1A1FC0FF002E27DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,25 +61,26 @@
 		3D358F5A1A1FC0FF002E27DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D358F591A1FC0FF002E27DB /* PagingAnimations.app */,
-				3D358F721A1FC0FF002E27DB /* PagingAnimationsTests.xctest */,
+				3D358F591A1FC0FF002E27DB /* PagingAnimation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D358F5B1A1FC0FF002E27DB /* PagingAnimations */ = {
+		3D358F5B1A1FC0FF002E27DB /* PagingAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				3D358F5E1A1FC0FF002E27DB /* AppDelegate.swift */,
-				3D358F601A1FC0FF002E27DB /* RootViewController.swift */,
-				3D358F621A1FC0FF002E27DB /* DataViewController.swift */,
-				3D358F641A1FC0FF002E27DB /* ModelController.swift */,
 				3D358F661A1FC0FF002E27DB /* Main.storyboard */,
+				3D358F601A1FC0FF002E27DB /* RootViewController.swift */,
+				3D358F641A1FC0FF002E27DB /* PagingController.swift */,
 				3D358F691A1FC0FF002E27DB /* Images.xcassets */,
 				3D358F6B1A1FC0FF002E27DB /* LaunchScreen.xib */,
 				3D358F5C1A1FC0FF002E27DB /* Supporting Files */,
+				3D2F40641A1FDCC800CAEC96 /* BasicCollectionViewController.swift */,
+				3D2F40661A1FDD4200CAEC96 /* BasicCollectionViewCell.swift */,
+				3D2F40671A1FDD4200CAEC96 /* BasicCollectionViewCell.xib */,
 			);
-			path = PagingAnimations;
+			path = PagingAnimation;
 			sourceTree = "<group>";
 		};
 		3D358F5C1A1FC0FF002E27DB /* Supporting Files */ = {
@@ -101,29 +91,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3D358F751A1FC0FF002E27DB /* PagingAnimationsTests */ = {
-			isa = PBXGroup;
-			children = (
-				3D358F781A1FC0FF002E27DB /* PagingAnimationsTests.swift */,
-				3D358F761A1FC0FF002E27DB /* Supporting Files */,
-			);
-			path = PagingAnimationsTests;
-			sourceTree = "<group>";
-		};
-		3D358F761A1FC0FF002E27DB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3D358F771A1FC0FF002E27DB /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D358F581A1FC0FF002E27DB /* PagingAnimations */ = {
+		3D358F581A1FC0FF002E27DB /* PagingAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D358F7C1A1FC0FF002E27DB /* Build configuration list for PBXNativeTarget "PagingAnimations" */;
+			buildConfigurationList = 3D358F7C1A1FC0FF002E27DB /* Build configuration list for PBXNativeTarget "PagingAnimation" */;
 			buildPhases = (
 				3D358F551A1FC0FF002E27DB /* Sources */,
 				3D358F561A1FC0FF002E27DB /* Frameworks */,
@@ -133,28 +106,10 @@
 			);
 			dependencies = (
 			);
-			name = PagingAnimations;
-			productName = PagingAnimations;
-			productReference = 3D358F591A1FC0FF002E27DB /* PagingAnimations.app */;
+			name = PagingAnimation;
+			productName = PagingAnimation;
+			productReference = 3D358F591A1FC0FF002E27DB /* PagingAnimation.app */;
 			productType = "com.apple.product-type.application";
-		};
-		3D358F711A1FC0FF002E27DB /* PagingAnimationsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D358F7F1A1FC0FF002E27DB /* Build configuration list for PBXNativeTarget "PagingAnimationsTests" */;
-			buildPhases = (
-				3D358F6E1A1FC0FF002E27DB /* Sources */,
-				3D358F6F1A1FC0FF002E27DB /* Frameworks */,
-				3D358F701A1FC0FF002E27DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D358F741A1FC0FF002E27DB /* PBXTargetDependency */,
-			);
-			name = PagingAnimationsTests;
-			productName = PagingAnimationsTests;
-			productReference = 3D358F721A1FC0FF002E27DB /* PagingAnimationsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -168,13 +123,9 @@
 					3D358F581A1FC0FF002E27DB = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					3D358F711A1FC0FF002E27DB = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 3D358F581A1FC0FF002E27DB;
-					};
 				};
 			};
-			buildConfigurationList = 3D358F541A1FC0FF002E27DB /* Build configuration list for PBXProject "PagingAnimations" */;
+			buildConfigurationList = 3D358F541A1FC0FF002E27DB /* Build configuration list for PBXProject "PagingAnimation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -187,8 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D358F581A1FC0FF002E27DB /* PagingAnimations */,
-				3D358F711A1FC0FF002E27DB /* PagingAnimationsTests */,
+				3D358F581A1FC0FF002E27DB /* PagingAnimation */,
 			);
 		};
 /* End PBXProject section */
@@ -199,15 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D358F681A1FC0FF002E27DB /* Main.storyboard in Resources */,
+				3D2F40691A1FDD4200CAEC96 /* BasicCollectionViewCell.xib in Resources */,
 				3D358F6D1A1FC0FF002E27DB /* LaunchScreen.xib in Resources */,
+				3D40F9E71A237796008B13CD /* Default-568h@2x.png in Resources */,
 				3D358F6A1A1FC0FF002E27DB /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D358F701A1FC0FF002E27DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,30 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2F40681A1FDD4200CAEC96 /* BasicCollectionViewCell.swift in Sources */,
 				3D358F611A1FC0FF002E27DB /* RootViewController.swift in Sources */,
-				3D358F651A1FC0FF002E27DB /* ModelController.swift in Sources */,
-				3D358F631A1FC0FF002E27DB /* DataViewController.swift in Sources */,
+				3D358F651A1FC0FF002E27DB /* PagingController.swift in Sources */,
 				3D358F5F1A1FC0FF002E27DB /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D358F6E1A1FC0FF002E27DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D358F791A1FC0FF002E27DB /* PagingAnimationsTests.swift in Sources */,
+				3D2F40651A1FDCC800CAEC96 /* BasicCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3D358F741A1FC0FF002E27DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D358F581A1FC0FF002E27DB /* PagingAnimations */;
-			targetProxy = 3D358F731A1FC0FF002E27DB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D358F661A1FC0FF002E27DB /* Main.storyboard */ = {
@@ -344,9 +274,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PagingAnimations/Info.plist;
+				INFOPLIST_FILE = PagingAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PagingAnimation;
 			};
 			name = Debug;
 		};
@@ -354,50 +284,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PagingAnimations/Info.plist;
+				INFOPLIST_FILE = PagingAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		3D358F801A1FC0FF002E27DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PagingAnimationsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PagingAnimations.app/PagingAnimations";
-			};
-			name = Debug;
-		};
-		3D358F811A1FC0FF002E27DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PagingAnimationsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PagingAnimations.app/PagingAnimations";
+				PRODUCT_NAME = PagingAnimation;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D358F541A1FC0FF002E27DB /* Build configuration list for PBXProject "PagingAnimations" */ = {
+		3D358F541A1FC0FF002E27DB /* Build configuration list for PBXProject "PagingAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D358F7A1A1FC0FF002E27DB /* Debug */,
@@ -406,21 +302,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D358F7C1A1FC0FF002E27DB /* Build configuration list for PBXNativeTarget "PagingAnimations" */ = {
+		3D358F7C1A1FC0FF002E27DB /* Build configuration list for PBXNativeTarget "PagingAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D358F7D1A1FC0FF002E27DB /* Debug */,
 				3D358F7E1A1FC0FF002E27DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		3D358F7F1A1FC0FF002E27DB /* Build configuration list for PBXNativeTarget "PagingAnimationsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D358F801A1FC0FF002E27DB /* Debug */,
-				3D358F811A1FC0FF002E27DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
